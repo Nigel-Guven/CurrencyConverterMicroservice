@@ -20,6 +20,10 @@ Currency Converter Microservice
 * Spring Cloud Bus
 * Hystrix for fault tolerance
 
-## Diagram
+## Architecture Diagram
 
 ![Currency Converter Microservice](assets/images/currency-converter-microservice.png "Microservice Diagram")
+
+## Configuration Diagram 
+
+![Configuration for Microservices](assets/images/configuration-diagram.png "Configuration Diagram")
