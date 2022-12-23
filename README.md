@@ -27,3 +27,7 @@ Currency Converter Microservice
 ## Configuration Diagram 
 
 ![Configuration for Microservices](assets/images/configuration-diagram.png "Configuration Diagram")
+
+## Ribbon and Naming Server Instance Routing
+
+![Configuration for Microservices](assets/images/ribbon-naming-server-diagram.png "Configuration Diagram")
