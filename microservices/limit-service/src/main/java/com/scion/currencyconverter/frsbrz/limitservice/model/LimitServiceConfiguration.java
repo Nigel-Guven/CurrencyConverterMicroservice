@@ -2,35 +2,35 @@ package com.scion.currencyconverter.frsbrz.limitservice.model;
 
 public class LimitServiceConfiguration 
 {
-	private int MinimumLimit;
-	private int MaximumLimit;
+	private int minimumLimit;
+	private int maximumLimit;
 	
 	public LimitServiceConfiguration(){}
 	
 	public LimitServiceConfiguration(int minimum, int maximum)
 	{
 		super();
-		this.MinimumLimit = minimum;
-		this.MaximumLimit = maximum;
+		this.minimumLimit = minimum;
+		this.maximumLimit = maximum;
 	}
 	
 	public int getMinimumLimit() 
 	{
-		return MinimumLimit;
+		return minimumLimit;
 	}
 
-	public void setMinimumLimit(int minimumLimit) 
+	public void setMinimumLimit(int minimum) 
 	{
-		MinimumLimit = minimumLimit;
+		minimumLimit = minimum;
 	}
 
 	public int getMaximumLimit() 
 	{
-		return MaximumLimit;
+		return maximumLimit;
 	}
 
-	public void setMaximumLimit(int maximumLimit) 
+	public void setMaximumLimit(int maximum) 
 	{
-		MaximumLimit = maximumLimit;
+		maximumLimit = maximum;
 	}
 }
