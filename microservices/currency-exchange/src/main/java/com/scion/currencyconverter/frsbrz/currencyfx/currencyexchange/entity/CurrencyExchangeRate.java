@@ -2,11 +2,21 @@ package com.scion.currencyconverter.frsbrz.currencyfx.currencyexchange.entity;
 
 import java.math.BigDecimal;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class CurrencyExchangeRate
 {
+	@Id
 	private int id;
-	private String fromCurrency;
-	private String toCurrency;
+	
+	@Column(name="exchangeFromCurrency")
+	private String exchangeFromCurrency;
+	@Column(name="exchangeToCurrency")
+	private String exchangeToCurrency;
+	
 	private BigDecimal exchangeRate;
 	
 	private int port;
@@ -17,8 +27,8 @@ public class CurrencyExchangeRate
 	{
 		super();
 		this.id = id;
-		this.fromCurrency = from;
-		this.toCurrency = to;
+		this.exchangeFromCurrency = from;
+		this.exchangeToCurrency = to;
 		this.exchangeRate = exchangeRate;
 	}
 
@@ -34,22 +44,22 @@ public class CurrencyExchangeRate
 
 	public String getFrom() 
 	{
-		return fromCurrency;
+		return exchangeFromCurrency;
 	}
 
 	public void setFrom(String from) 
 	{
-		this.fromCurrency = from;
+		this.exchangeFromCurrency = from;
 	}
 
 	public String getTo() 
 	{
-		return toCurrency;
+		return exchangeToCurrency;
 	}
 
 	public void setTo(String to) 
 	{
-		this.toCurrency = to;
+		this.exchangeToCurrency = to;
 	}
 
 	public BigDecimal getExchangeRate() 
