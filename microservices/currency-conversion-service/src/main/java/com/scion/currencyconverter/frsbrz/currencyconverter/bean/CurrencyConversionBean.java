@@ -2,7 +2,6 @@ package com.scion.currencyconverter.frsbrz.currencyconverter.bean;
 
 import java.math.BigDecimal;
 
-
 public class CurrencyConversionBean 
 {	
 	private int id;

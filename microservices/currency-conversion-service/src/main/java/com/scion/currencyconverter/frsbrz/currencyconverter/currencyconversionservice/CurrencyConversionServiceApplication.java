@@ -2,10 +2,12 @@ package com.scion.currencyconverter.frsbrz.currencyconverter.currencyconversions
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableFeignClients("com.scion.currencyconverter.frsbrz.currencyconverter.currencyconversionservice")
+@EnableDiscoveryClient
 public class CurrencyConversionServiceApplication 
 {
 
@@ -13,5 +15,4 @@ public class CurrencyConversionServiceApplication
 	{
 		SpringApplication.run(CurrencyConversionServiceApplication.class, args);
 	}
-
 }
